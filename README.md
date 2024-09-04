@@ -1,1 +1,0 @@
-# andekos.github.io
