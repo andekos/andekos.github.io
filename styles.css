@@ -2,7 +2,13 @@ body {background-color: #020202;
     color: #7cc676;
     font-family: monospace;
     }
-a {
+a:link {
+    background-color: #020202;
+    color: #aff9a9;
+    font-family: monospace;
+}
+
+a:visted {
     background-color: #020202;
     color: #aff9a9;
     font-family: monospace;
