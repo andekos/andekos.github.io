@@ -2,6 +2,8 @@ body {background-color: #020202;
     color: #7cc676;
     font-family: monospace;
     }
-a:link {
+a {
+    background-color: #020202;
     color: #aff9a9;
+    font-family: monospace;
 }
