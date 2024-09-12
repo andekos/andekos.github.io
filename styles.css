@@ -4,6 +4,10 @@ body {background-color: #020202;
     padding-right: 10%;
     padding-left: 10%;
     }
+
+h3 {
+    text-decoration: underline;
+}
 a:link {
     background-color: #020202;
     color: #aff9a9;
