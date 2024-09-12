@@ -1,4 +1,6 @@
-Actions
+<link rel="stylesheet" href="/styles.css">
+<a href="/index.html">back</a>
+#Actions
 - 5 Types of Actions (And their Icons)
 	1. Single Action (single arrow)
 	2. Two Action Activities (double arrow)
