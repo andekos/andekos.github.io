@@ -1,0 +1,144 @@
+<DOCTYPE! HTML>
+<link rel="stylesheet" href="/styles.css">
+<a href="/index.html">back</a>
+<body>
+<h1>Actions</h1>
+<p> 5 Types of Actions (And their Icons) </p>
+	<ol>
+    <li>Single Action (single arrow)</li>
+	<li>Two Action Activities (double arrow)</li>
+	<li>Three Action Activities (triple arrow)</li>
+	<li>Free Action (hollow arrow)</li>
+	<li>Reaction (uno reverse arrow)</li>
+    </ol>
+<p>Free actions and reactions typically have triggers</p>
+	<ul><li>You cannot do both a free action and a reaction in response to the same trigger</li></ul>
+<h2> Basic Actions </h2>
+<p>Every creature can do these except in extreme circumstances</p>
+<div class = "table">
+<br>| Action       | Type     | Tags                | Requirements | Description                  |
+<br>| ------------ | -------- | ------------------- | ------------ | ---------------------------- |
+<br>| Aid          | reaction | n/a                 | yes          | grant bonus to ally          |
+<br>| Crawl        | single   | move                | yes          | move 5 ft while prone        |
+<br>| Delay        | free     | n/a                 | yes          | Hold your whole turn         |
+<br>| Drop Prone   | single   | move                | no           | fall prone                   |
+<br>| Escape       | single   | attack              | no           | escape things                |
+<br>| Interact     | single   | manipulate          | no           | use an object or swap items  |
+<br>| Leap         | single   | move                | no           | jump forward or up           |
+<br>| Ready        | double   | concentrate         | no           | hold 1 action or free action |
+<br>| Release      | free     | manipulate          | no           | drop something               |
+<br>| Seek         | single   | concentrate, secret | no           | look for someone/something   |
+<br>| Sense Motive | single   | concetrate, secret  | no           | sense motive                 |
+<br>| Stand        | single   | move                | no           | get up from prone            |
+<br>| Stride       | single   | move                | no           | move up to speed             |
+<br>| Strike       | single   | attack              | no           | you attack                   |
+</div>
+
+<h3>Aid (reaction)</h3>
+    <em>Trigger:</em> An ally is about to make a skill check or attack roll
+    <em>Requirements:</em> An ally accepts aid and you have prepared to help
+    <ul>
+    <li><em>Crit</em> grants +2 (maybe more depending on proficiency (master or higher))</li>
+    <li><em>Success</em> grants +1</li>
+    <li><em>Crit Fail</em> -1 penalty</li>
+    </ul>
+<h3>Crawl (single)</h3>
+    <p>#moveAction
+    <br><em>Requirements:</em> You are prone and your speed is at least 10</p>
+    <ul>
+    <li>move 5 feet</li>
+    <li>staying prone</li>
+    </ul>
+<h3>Delay (free)</h3>
+    <p><em>Trigger:</em> Your turn begins</p>
+    <ul>
+    <li>You delay your initiative position until after someone else's turn</li>
+    <li>No reactions until your turn begins</li>
+    <li>If you don't take your turn you just lose your turn</li>
+    </ul>
+<h3>Drop Prone (single)</h3>
+    <p>#moveAction 
+    <br>You fall prone</p>
+<h3>Escape (single)</h3>
+    <p>#attackAction</p>
+    <ul>
+    <li>Attempt to escape grabbed, immobilized, or restrained.</li>
+    <li>Unarmed attack check, or acrobatics, or athletics</li>
+    <li><em>Crit</em> free and can **Stride** up to 5 feet</li>
+    <li><em>Success</em> Free</li>
+    <li><em>Crit Fail</em> not free and can't attempt again until your next turn</li>
+<h3>Interact (single)</h3>
+    <p>#manipulateAction</p>
+    <ul>
+    <li>grab an object</li>
+    <li>draw a weapon</li>
+    <li>swap items</li>
+    <li>open door</li>
+    <li>etc...</li>
+    </ul>
+<h3>Leap (single)</h3>
+    <p>#moveAction </p>
+    <ul>
+    <li>Horizontal jump up to 10 feet for speed of 15+ and 15 for speed of 30+</li>
+    <li>Vertical jump up to 3 feet vertically and 5 feet horizontally</li>
+    </ul>
+<h3>Ready (double action)</h3>
+    <p>#concentrateAction</p>
+    <ul>
+    <li>prepare to use an action at a trigger you decide</li>
+    <li>Must be a single action or free action</li>
+    <li>Can't already have a trigger</li>
+    </ul>
+<h3>Release (free)</h3>
+    <p>#manipulateAction</p>
+    <ul>
+    <li>Drop something</li>
+    <li>Does not trigger actions triggered by the manipulate trait</li>
+    </ul>
+<h3>Seek (single)</h3>
+    <p>#concentrateAction #secretAction</p>
+    <ul>
+    <li>Find hiding stuff</li>
+    <li>Typically 30 feet or less</li>
+    <li>Secret perception check rolled by the GM</li>
+    <li><em>Crit</em> You know the location of undetected/hidden creatures/objects</li>
+    <li><em>Success</em> Undetected is now hidden hidden is now observed. </li>
+    </ul>
+<h3>Sense Motive (single)</h3>
+    <p>#concentrateAction #secretAction </p>
+    <ul>
+    <li>Secret perception check to read a creature</li>
+    <li><em>Crit</em> You know the true intentions</li>
+    <li><em>Success</em> You no if a creature is behaving normally, but not true intentions</li>
+    <li><em>Failure</em> You believe what they want you to believe</li>
+    <li><em>Crit Fail</em> You misunderstand their intentions</li>
+    </ul>
+<h3>Stand (single)</h3>
+    <p>#moveAction </p>
+    <ul><li>>You stand up from being prone.</li> </ul>
+<h3>Step (single)</h3>
+    <p>#moveAction 
+    <br><em>Requirements</em> your speed is at least 10 feet</p>
+    <ul>
+    <li>carefully move 5 feet </li>
+    <li>doesn't trigger reactions</li>
+    <li>Cannot step into difficult terrain</li>
+    <li>must use land speed</li>
+    </ul>
+<h3>Stride (single)</h3>
+    <p>#moveAction </p>
+    <ul>
+    <li>Move up to your speed</li>
+    <li>Can't split it up</li>
+    </ul>
+<h3>Strike (single)</h3>
+    <p>#attackAction </p>
+    <ul>
+    <li>Roll attack roll against AC</li>>
+    </ul>
+<h3>Take Cover (single)</h3>
+    <p><em>Requirements</em> Benefitting from cover, prone, or near somewhere you can take cover</p>
+    <ul>
+    <li>Improve your cover condition</li>
+    </ul>
+</body>
